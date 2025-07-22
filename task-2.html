@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cell {
+            aspect-ratio: 1;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+    <script src="/task-2.js" defer></script>
+</head>
+
+<body style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+">
+    <section id="board" style="
+    width: 90vh;
+    height: 90vh;
+    background-color: rgb(201, 201, 201);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 5px;
+    padding: 5px;
+    ">
+    </section>
+</body>
+
+</html>
